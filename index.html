@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Find a rate</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="custom.css" rel="stylesheet">
+<link href="inputField.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+<script src="inputFieldScript.js"></script>
+</head>
+
+<body>
+<div class="row" style="margin-left:24px;">
+<div class="col-md-3"></div>
+<div class="col-md-9 row" >
+<h1 id=formHeading">Find a Rate</h1>
+<form name="form1" aria-labelledby="formHeading" onSubmit="return validateForm();">
+<label for="fromCountry">Sending From</label><input id="fromCountry" readonly value="Canada" type="text" autocomplete="no"/>
+<br/>
+
+<label id="fromPostalCode">Postal Code</label><p id="fpcHintText" class="hintText">Example: A2A 2A2</p><input type="text" autocomplete="no" placeholder="A2A 2A2" aria-labelledby="fromPostalCode fpcHintText">
+<br/>
+
+<label for="sendingTo">Going To</label><input id="sendingTo" type="text" autocomplete="no">
+<br/>
+
+<label for="toProvince">Province</label><input id="toProvince" type="text" placeholder="Enter the recipient's province" autocomplete="no">
+<br/>
+<label id="toPostalCode">Postal Code</label><p id="tpcHintText" class="hintText">Example: A2A 2A2</p><input id="toPostalCode" type="text" autocomplete="no" aria-labelledby="toPostalCode tpcHintText" aria-required="true" aria-invalid="false" aria-describedby="errMsg2"><div id="errMsg2" class="ds-error"></div>
+<br/>
+
+<label for="disabled">International Customs Duty</label><input aria-disabled="true" disabled id="disabled" class="disabled" type="text" autocomplete="no">
+<br/>
+
+<label for="textarea">Additional Information</label><textarea id="textarea" maxLength="10" aria-label="Additional Information (10 Character limit here)"></textarea><p aria-live="polite" id="textarea-maxCharacter" class="maxCharacter">10 Character limit here</p>
+<br/>
+
+<p style="padding-bottom:30px;"><button type="submit" class="btn btn-primary">Submit</button>
+</p>
+</form>
+<br role="none"/>
+<br role="none"/>
+<br role="none"/>
+<br role="none"/>
+<br role="none"/>
+
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
