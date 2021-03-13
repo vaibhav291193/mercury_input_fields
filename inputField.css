@@ -147,7 +147,7 @@ textarea.disabled, textarea:disabled {
   text-align: left;
   display: block;
 
-  background-image: url('../img/icons/red-alert.svg');
+  background-image: url('red-alert.svg');
   background-repeat: no-repeat;
   padding-left: 32px;
 }

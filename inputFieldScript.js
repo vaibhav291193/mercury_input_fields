@@ -1,20 +1,20 @@
 function validateForm() {
-alert("in function");
 var postalCode = document.form1.toPostalCode;
 var postalCodeLen = postalCode.value.length;
 document.getElementById("toPostalCode").classList.remove("error");
-document.getElementById("toPostalCode").setAttribute('aria-invalid', false);
-document.getElementById(""errMsg2").innerHTML = "";
+document.getElementById("toPostalCode").setAttribute("aria-invalid", "false");
+document.getElementById("errMsg2").innerHTML = "";
 
 if(postalCodeLen <7) {
 document.getElementById("toPostalCode").classList.add("error");
-document.getElementById("toPostalCode").setAttribute('aria-invalid', true);
-document.getElementById(""errMsg2").innerHTML = "Please enter a valid postal code.";
+document.getElementById("toPostalCode").setAttribute("aria-invalid", "true");
+document.getElementById("errMsg2").innerHTML = "Please enter a valid postal code.";
 document.getElementById("toPostalCode").focus();
 return false;
 }
 return true;
 }
+
 
 function maxCharacterLength(textarea) {
         const maxchar = textarea.target.getAttribute('maxLength');
@@ -28,7 +28,8 @@ function maxCharacterLength(textarea) {
         } else {
             maxCharacter.innerHTML = `${maxchar - len} characters left`;
         }
-    }
-    document.querySelectorAll('textarea').forEach((el) => {
+document.querySelectorAll('textarea').forEach((el) => {
         el.addEventListener('keyup', maxCharacterLength);
-    });}
+    });    
+}
+    
