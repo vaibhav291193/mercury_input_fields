@@ -8,8 +8,10 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="custom.css" rel="stylesheet">
 <link href="inputField.css" rel="stylesheet">
+<link href="dropdowns.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 <script src="inputFieldScript.js"></script>
+<script src="dropdownScript.js"></script>
 </head>
 
 <body>
@@ -24,8 +26,7 @@
 <label id="fromPostalCode">Postal Code</label><p id="fpcHintText" class="hintText">Example: A2A 2A2</p><input type="text" autocomplete="no" placeholder="A2A 2A2" aria-labelledby="fromPostalCode fpcHintText">
 <br/>
 
-<label for="sendingTo">Going To</label><input id="sendingTo" type="text" autocomplete="no">
-<br/>
+<label id=going-to-label">Going To</label><select id="going-to" aria-labelledby="going-to-label" class="ds-cpc-control-select__tpl" >    <option selected="selected" value="">Select Country</option>    <option value="Canada">Canada</option>    <option value="USA">USA</option>    <option value="International">International</option>    </select><br/>
 
 <label for="toProvince">Province</label><input id="toProvince" type="text" placeholder="Enter the recipient's province" autocomplete="no">
 <br/>
