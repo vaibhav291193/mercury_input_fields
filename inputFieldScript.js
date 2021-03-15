@@ -28,8 +28,4 @@ function maxCharacterLength(textarea) {
         } else {
             maxCharacter.innerHTML = `${maxchar - len} characters left`;
         }
-document.querySelectorAll('textarea').forEach((el) => {
-        el.addEventListener('keyup', maxCharacterLength);
-    });    
 }
-    
