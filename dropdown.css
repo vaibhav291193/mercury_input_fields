@@ -117,7 +117,7 @@ label + .cpc-control-select {
 	 position: absolute;
 	 right: 15px;
 	 top: 17px;
-	 background: url("../img/icons/drop-down-arrow.svg") center 50% no-repeat;
+	 background: url("drop-down-arrow.svg") center 50% no-repeat;
 	 width: 12px;
 	 height: 8px;
 	 transition: transform 0.4s;
@@ -257,7 +257,7 @@ label + .cpc-control-select {
   text-align: left;
   display: block;
 
-  background-image: url('../img/icons/red-alert.svg');
+  background-image: url('red-alert.svg');
   background-repeat: no-repeat;
   padding-left: 32px;
 }
