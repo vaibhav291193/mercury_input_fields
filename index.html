@@ -37,7 +37,7 @@
 <label for="disabled">International Customs Duty</label><input aria-disabled="true" disabled id="disabled" class="disabled" type="text" autocomplete="no">
 <br/>
 
-<label for="textarea">Additional Information</label><textarea id="textarea" maxLength="10" aria-label="Additional Information (10 Character limit here)"></textarea><p aria-live="polite" id="textarea-maxCharacter" class="maxCharacter">10 Character limit here</p>
+<label for="textarea">Additional Information</label><textarea id="textarea" aria-invalid="false" aria-describedby="errMsgTA" maxLength="10" aria-required="true" aria-label="Additional Information (10 Character limit here)"></textarea><p aria-live="polite" id="textarea-maxCharacter" class="maxCharacter">10 Character limit here</p><div id="errMsgTA" class="ds-error" ></div>
 <br/>
 
 <p style="padding-bottom:30px;"><button type="submit" class="btn btn-primary">Submit</button>
