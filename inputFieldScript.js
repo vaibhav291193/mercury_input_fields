@@ -25,7 +25,7 @@ errors.push(1);
 if(additionalInfoLen < 1) {
 
 errors.push(2);
-document.getElementById("errMsgTA").innerHTML = "Error: This field is mandatory";
+document.getElementById("errMsgTA").innerHTML = "Please enter a description";
 document.getElementById("textarea").setAttribute("aria-invalid", "true");
 document.getElementById("textarea").classList.add("error");
 }
