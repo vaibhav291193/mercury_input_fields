@@ -260,5 +260,6 @@ label + .cpc-control-select {
   background-image: url('red-alert.svg');
   background-repeat: no-repeat;
   padding-left: 32px;
+padding-top: 4px;
 }
  
