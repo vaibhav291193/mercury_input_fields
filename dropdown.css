@@ -245,7 +245,7 @@ label + .cpc-control-select {
  select.cpc-control-select__tpl {
 	 display: none;
 }
-.ds-error {
+.ds-error-dd {
   font-family: Roboto;
   font-size: 16px;
   font-weight: 300;
